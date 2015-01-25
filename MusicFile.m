@@ -32,7 +32,6 @@ Bb1bass=makeFormNotes(0.5,1-12-12);
 Dbass=makeFormNotes(0.5,5-12);
 Dbass4=makeFormNotes(4,5-12);
 Gbass=makeFormNotes(0.5,10-12);
-Gbass4=makeFormNotes(4,5-12);
 Fbass=makeFormNotes(0.5,8-12);
 Fbass1=makeFormNotes(0.5,8-12-12);
 Cbass=makeFormNotes(0.5,3-12);
