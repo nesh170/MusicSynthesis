@@ -37,7 +37,10 @@ Fbass1=makeFormNotes(0.5,8-12-12);
 Cbass=makeFormNotes(0.5,3-12);
 
 %Rest
-rest=zeros([1,4000]);
+rest=zeros([1,4000]); %This is a rest that lasts for 0.5 seconds
+
+%The line function puts the notes in a matrix and adds them all together if
+%there are more than one note at the same time. 
 
 %Line 1
 line1start=[G D G D Eb D G D];
@@ -77,7 +80,8 @@ line4pB3=[Dbass4+Gbass4];
 line4=[line4pT1+line4pB1 line4pT2+line4pB2 line4pT3+line4pB3];
 
 
-%Final Song
+%Final Song is listed in the matrix below
 finalSong=[line1 line2 line3 line4];
-soundsc(finalSong,8000);
-audiowrite('finalSong.wav',finalSong,8000)
+%finalSong=[line1start line1end]; %Used to determine harmonics
+soundsc(finalSong,8000); %Playing the song
+wavwrite(finalSong,8000,'Loganathan_WhatIveDone') %Writting it to Matlab
